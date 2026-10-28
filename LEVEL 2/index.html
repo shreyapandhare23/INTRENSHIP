@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura | Interactive Creative Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AURA<span>.</span></div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Work</a>
+      <a href="#contact" class="nav-cta">Say Hello</a>
+    </nav>
+  </header>
+  <main class="hero-container" id="home">
+    <div class="hero-badge">Level 2: Cognifyz Internship Project</div>
+    <h1 class="hero-title">Experience Adaptive Design & Dynamic Vibes</h1>
+    <p class="hero-subtitle">
+      A responsive, modern interface built with semantic HTML5, fluid CSS media queries, and interactive JavaScript DOM manipulation.
+    </p>
+    <div class="action-box">
+      <button id="themeToggleBtn" class="magic-btn" aria-label="Change Background Color">
+        <span class="btn-icon">🎨</span>
+        <span class="btn-text">Switch Ambient Vibe</span>
+      </button>
+      
+      <div class="color-indicator">
+        Current Tone: <span id="colorName">Midnight Obsidian</span>
+        <code id="hexCode">#0f172a</code>
+      </div>
+    </div>
+  </main>
+  <section class="cards-section" id="projects">
+    <h2 class="section-heading">Featured Highlights</h2>
+    <div class="grid-container">
+      
+      <div class="card">
+        <div class="card-tag">Task 3</div>
+        <h3>Fluid Responsiveness</h3>
+        <p>Using CSS Grid and media queries, this layout adjusts seamlessly from 4K displays down to handheld mobile devices.</p>
+        <span class="card-footer">Mobile & Tablet Friendly</span>
+      </div>
+
+      <div class="card">
+        <div class="card-tag">Task 4</div>
+        <h3>DOM Manipulation</h3>
+        <p>A JavaScript event listener listens for clicks and transitions background colors dynamically with smooth CSS interpolation.</p>
+        <span class="card-footer">Interactive JS</span>
+      </div>
+
+      <div class="card">
+        <div class="card-tag">Modern UI</div>
+        <h3>Glassmorphism Styling</h3>
+        <p>Backdrop filters, translucent borders, and modern typography ensure a high-end visual finish suitable for portfolio showcases.</p>
+        <span class="card-footer">Clean CSS3</span>
+      </div>
+
+    </div>
+  </section>
+  <footer class="footer" id="contact">
+    <p>Crafted for Cognifyz Front-End Internship • Level 2 Task</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
